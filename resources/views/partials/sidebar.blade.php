@@ -41,8 +41,11 @@
                 <h6 class="collapse-header">Fungsi:</h6>
                 <a class="collapse-item" href="/import-project">Import Project</a>
                 <a class="collapse-item" href="/form-project">Input Project</a>
+                <a class="collapse-item" href="/form-design">Input Design</a>
+                <a class="collapse-item" href="/form-nesting">Input Nesting</a>
+                <a class="collapse-item" href="/form-program">Input Program</a>
+                <a class="collapse-item" href="/form-checker">Input Checker</a>
                 @endif
-                <hr>
                 @if (auth()->user()->role == 'design')
                 <a class="collapse-item" href="/form-design">Input Design</a>
                 @endif
@@ -91,7 +94,7 @@
         <div id="collapseUserManagement" class="collapse" aria-labelledby="headingUserManagement"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="/tables-pengguna">Daftar Pengguna</a>
+                <a class="collapse-item" href="/tables-user">Daftar Pengguna</a>
                 <h6 class="collapse-header">Fungsi:</h6>
                 <a class="collapse-item" href="/register">Tambah Pengguna</a>
             </div>

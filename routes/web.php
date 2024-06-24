@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DataKonsesiController;
+use App\Http\Controllers\DataUserController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DataMonitoringController;
 
@@ -37,6 +38,9 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 // Route untuk register
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'register']);
+
+// Route untuk melihat Tabel Konsesi
+Route::get('/tables-user', [DataUserController::class, 'index'])->name('datauser.index')->middleware('auth');
 
 // Route untuk melihat Tabel Konsesi
 Route::get('/tables-konsesi', [DataKonsesiController::class, 'index'])->name('datakonsesi.index')->middleware('auth');
