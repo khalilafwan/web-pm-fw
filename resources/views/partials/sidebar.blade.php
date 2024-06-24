@@ -37,14 +37,24 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="/tables-monitoring">Tables</a>
+                @if (auth()->user()->role == 'admin')
                 <h6 class="collapse-header">Fungsi:</h6>
                 <a class="collapse-item" href="/import-project">Import Project</a>
                 <a class="collapse-item" href="/form-project">Input Project</a>
+                @endif
                 <hr>
+                @if (auth()->user()->role == 'design')
                 <a class="collapse-item" href="/form-design">Input Design</a>
+                @endif
+                @if (auth()->user()->role == 'nesting')
                 <a class="collapse-item" href="/form-nesting">Input Nesting</a>
+                @endif
+                @if (auth()->user()->role == 'program')
                 <a class="collapse-item" href="/form-program">Input Program</a>
+                @endif
+                @if (auth()->user()->role == 'checker')
                 <a class="collapse-item" href="/form-checker">Input Checker</a>
+                @endif
             </div>
         </div>
     </li>
@@ -60,14 +70,15 @@
         <div id="collapseKonsesi" class="collapse" aria-labelledby="headingKonsesi" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="/tables-konsesi">Tables</a>
-
+                @if (auth()->user()->role == 'admin')
                 <h6 class="collapse-header">Fungsi:</h6>
                 <a class="collapse-item" href="/form-konsesi">Input Data</a>
-
+                @endif
             </div>
         </div>
     </li>
 
+    @if (auth()->user()->role == 'admin')
     <!-- Nav Item - User Management Collapse Menu -->
 
     <li class="nav-item">
@@ -85,8 +96,8 @@
                 <a class="collapse-item" href="/register">Tambah Pengguna</a>
             </div>
         </div>
-
     </li>
+    @endif
 
 
     <!-- Divider -->

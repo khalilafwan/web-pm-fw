@@ -52,7 +52,7 @@
 
     <!-- Page level custom scripts -->
     <script src="{{ asset('js/demo/datatables-demo.js') }}"></script>
-    {{-- <script src="{{ asset('js/datatables.min.js') }}"></script> --}}
+    <script src="{{ asset('js/datatables.min.js') }}"></script>
     <script src="{{ asset('js/delete-konsesi.js') }}"></script>
 </body>
 

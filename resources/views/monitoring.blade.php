@@ -71,8 +71,9 @@
                         <th>DELIVERY NO</th>
                         <th>DELIVERY TGL</th>
                         <th>KETERANGAN</th>
-
+                        @if (auth()->user()->role == 'admin')
                         <th>Aksi</th>
+                        @endif
 
                     </tr>
                 </thead>
@@ -131,14 +132,14 @@
                         <td>{{ $row->delivery_no }}</td>
                         <td>{{ $row->delivery_tgl }}</td>
                         <td>{{ $row->keterangan }}</td>
-                        {{-- @if (auth()->user()->role == 'admin') --}}
+                        @if (auth()->user()->role == 'admin')
                         <td>
                             <button type="button" class="btn btn-danger btn-circle btn-delete" data-toggle="modal"
                                 data-target="#deleteModal" data-id="{{ $row->id }}">
                                 <i class="fas fa-trash"></i>
                             </button>
                         </td>
-                        {{-- @endif --}}
+                        @endif
                     </tr>
                     @endforeach
                     </tr>
