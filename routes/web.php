@@ -20,11 +20,7 @@ use App\Http\Controllers\DataMonitoringController;
 */
 
 // Route untuk melihat Dashboard
-Route::get('/', function () {
-    return view('index', [
-        "title" => "Dashboard"
-    ]);
-})->middleware('auth');
+Route::get('/', [ChartController::class, 'index'])->middleware('auth');
 
 // Route untuk menampilkan form login
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');

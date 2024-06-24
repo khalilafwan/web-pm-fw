@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\DataMonitoring;
 use Illuminate\Support\Facades\DB;
 
 class ChartController extends Controller
@@ -17,5 +18,14 @@ class ChartController extends Controller
     {
         $data = DB::select("SELECT tipe_fswm, COUNT(*) as jumlah FROM data_monitoring GROUP BY tipe_fswm");
         return response()->json($data);
+    }
+
+    public function index()
+    {
+        $total_pendapatan = DataMonitoring::getTotalPendapatan();
+        return view('index', [
+            'title' => 'Dashboard',
+            'total_pendapatan' => $total_pendapatan
+        ]);
     }
 }
