@@ -19,6 +19,8 @@
         rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('DataTables/datatables.min.css') }}" rel="stylesheet">
     <link rel="icon" href="{{ asset('img/pm_favico.png') }}">
 </head>
 
