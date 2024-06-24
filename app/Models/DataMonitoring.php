@@ -10,6 +10,11 @@ class DataMonitoring extends Model
     use HasFactory;
 
     protected $table = 'data_monitoring';
+    public static function getTotalPendapatan()
+    {
+        return self::sum('nilai_harga');
+    }
+
     protected $fillable = [
         'id','no_jo','tgl_jo','nama_project','kode_gbj','nilai_harga','nama_panel','tipe_jenis','tipe_fswm','qty_unit','qty_cell',
         'nomor_wo','nomor_seri','warna','size_panel_height','size_panel_width','size_panel_deep','mh_std','mh_aktual',

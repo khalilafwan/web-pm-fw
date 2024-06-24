@@ -24,8 +24,7 @@
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                             Total Harga Project</div>
-                        <div id="liveCounter" class="h5 mb-0 font-weight-bold text-gray-800">Rp. 0
-                        </div>
+                        <div id="liveCounter" class="h5 mb-0 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -177,5 +176,12 @@
 <!-- Page level custom scripts -->
 <script src="{{ asset('js/chart-area.js') }}"></script>
 <script src="{{ asset('js/chart-pie.js') }}"></script>
+<script>
+    // Ambil nilai total pendapatan dari PHP
+    var totalPendapatan = {{ $total_pendapatan }};
+    
+    // Tampilkan nilai total pendapatan dalam format mata uang
+    document.getElementById("liveCounter").innerHTML =totalPendapatan.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }).replace('IDR', '');
+</script>
 
 @endsection
