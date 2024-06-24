@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('DataMonitoring', function (Blueprint $table) {
+        Schema::create('data_monitoring', function (Blueprint $table) {
             $table->id();
             $table->string('no_jo')->nullable();
             $table->date('tgl_jo')->nullable();

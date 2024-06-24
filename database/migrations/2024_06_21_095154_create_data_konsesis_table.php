@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('DataKonsesi', function (Blueprint $table) {
+        Schema::create('data_konsesi', function (Blueprint $table) {
             $table->id();
             $table->string('jo')->nullable();
             $table->string('wo')->nullable();
