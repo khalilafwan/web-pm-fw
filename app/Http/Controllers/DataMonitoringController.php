@@ -196,7 +196,6 @@ class DataMonitoringController extends Controller
         // Simpan Data
         $dataMonitoring->save();
 
-
         // Set alert untuk sukses
         return redirect()->route('dataMonitoring.index')->with('alert', [
             'type' => 'success',
