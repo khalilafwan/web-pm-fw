@@ -7,7 +7,7 @@
 
 @section('content')
 
-<form method="POST" action="import_aksi.php" enctype="multipart/form-data">
+<form method="POST" action="import-aksi.php" enctype="multipart/form-data">
     <div class="container">
         <hr>
 
