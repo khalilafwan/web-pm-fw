@@ -35,7 +35,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">ID Project</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan ID Project" name="id" required>
+                        <input type="text" class="form-control" placeholder="Masukkan ID Project" name="id">
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">NO JO</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Nomor JO" name="no_jo" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Nomor JO" name="no_jo">
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <label class="control-label col-sm-4">TGL JO</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukan Tgl JO" name="tgl_jo" required>
+                            placeholder="Masukan Tgl JO" name="tgl_jo">
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">NAMA PROJECT</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Nama Project" name="nama_project" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Nama Project" name="nama_project">
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">KODE GBJ</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Kode GBJ" name="kode_gbj" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Kode GBJ" name="kode_gbj">
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">HARGA</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Harga" name="nilai_harga" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Harga" name="nilai_harga">
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">NAMA PANEL</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Nama Panel" name="nama_panel" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Nama Panel" name="nama_panel">
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">TIPE JENIS</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Tipe Jenis" name="tipe_jenis" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Tipe Jenis" name="tipe_jenis">
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">UNIT</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Unit" name="qty_unit" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Unit" name="qty_unit">
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">CELL</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Cell" name="qty_cell" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Cell" name="qty_cell">
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">WARNA</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Warna" name="warna" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Warna" name="warna">
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">NO WO</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan No WO" name="nomor_wo" required>
+                        <input type="text" class="form-control" placeholder="Masukkan No WO" name="nomor_wo">
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">NO SERI</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan No Seri" name="nomor_seri" required>
+                        <input type="text" class="form-control" placeholder="Masukkan No Seri" name="nomor_seri">
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">HEIGHT</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Height" name="size_panel_height" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Height" name="size_panel_height">
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">WIDTH</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Width" name="size_panel_width" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Width" name="size_panel_width">
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">DEEP</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Deep" name="size_panel_deep" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Deep" name="size_panel_deep">
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                     <label class="control-label col-sm-4">MH STD</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan MH STD" name="mh_std" required>
+                            placeholder="Masukkan MH STD" name="mh_std">
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
                     <label class="control-label col-sm-4">MH AKTUAL</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan MH AKTUAL" name="mh_aktual" required>
+                            placeholder="Masukkan MH AKTUAL" name="mh_aktual">
                     </div>
                 </div>
             </div>
@@ -214,7 +214,7 @@
                     <label class="control-label col-sm-4">TGL SUBMIT DWG FOR APPROVAL</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan Tgl" name="tgl_submit_dwg_for_approval" required>
+                            placeholder="Masukkan Tgl" name="tgl_submit_dwg_for_approval">
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
                     <label class="control-label col-sm-4">TGL APPROVED</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan TGL APPROVED" name="tgl_approved" required>
+                            placeholder="Masukkan TGL APPROVED" name="tgl_approved">
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@
                     <label class="control-label col-sm-4">TGL RELEASE DWG SOFT COPY</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan RELEASE DWG" name="tgl_release_dwg_softcopy" required>
+                            placeholder="Masukkan RELEASE DWG" name="tgl_release_dwg_softcopy">
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
                     <label class="control-label col-sm-4">TGL RELEASE DWG HARD COPY</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan RELEASE DWG" name="tgl_release_dwg_hardcopy" required>
+                            placeholder="Masukkan RELEASE DWG" name="tgl_release_dwg_hardcopy">
                     </div>
                 </div>
             </div>
@@ -260,7 +260,7 @@
                     <label class="control-label col-sm-4">BREAKDOWN</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan Breakdown" name="breakdown" required>
+                            placeholder="Masukkan Breakdown" name="breakdown">
                     </div>
                 </div>
             </div>
@@ -270,7 +270,7 @@
                     <label class="control-label col-sm-4">BUSBAR</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan Busbar" name="busbar" required>
+                            placeholder="Masukkan Busbar" name="busbar">
                     </div>
                 </div>
             </div>
@@ -280,7 +280,7 @@
                     <label class="control-label col-sm-4">TARGET PPC</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan Target PPC" name="target_ppc" required>
+                            placeholder="Masukkan Target PPC" name="target_ppc">
                     </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@
                     <label class="control-label col-sm-4">TARGET ENG</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan Target Eng" name="target_eng" required>
+                            placeholder="Masukkan Target Eng" name="target_eng">
                     </div>
                 </div>
             </div>
@@ -300,7 +300,7 @@
                     <label class="control-label col-sm-4">TGL BOX SELESAI</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan TGL BOX" name="tgl_box_selesai" required>
+                            placeholder="Masukkan TGL BOX" name="tgl_box_selesai">
                     </div>
                 </div>
             </div>
@@ -310,7 +310,7 @@
                     <label class="control-label col-sm-4">DUE DATE DENGAN CUSTOMER</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan DUE DATE" name="due_date" required>
+                            placeholder="Masukkan DUE DATE" name="due_date">
                     </div>
                 </div>
             </div>
@@ -320,7 +320,7 @@
                     <label class="control-label col-sm-4">TGL TERBIT WO</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan TGL TERBIT" name="tgl_terbit_wo" required>
+                            placeholder="Masukkan TGL TERBIT" name="tgl_terbit_wo">
                     </div>
                 </div>
             </div>
@@ -330,7 +330,7 @@
                     <label class="control-label col-sm-4">PLAN START PRODUKSI</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan PLAN START" name="plan_start_produksi" required>
+                            placeholder="Masukkan PLAN START" name="plan_start_produksi">
                     </div>
                 </div>
             </div>
@@ -340,7 +340,7 @@
                     <label class="control-label col-sm-4">AKTUAL START PRODUKSI</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan AKTUAL START" name="aktual_start_produksi" required>
+                            placeholder="Masukkan AKTUAL START" name="aktual_start_produksi">
                     </div>
                 </div>
             </div>
@@ -350,7 +350,7 @@
                     <label class="control-label col-sm-4">PLAN FG WO</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan PLAN FG" name="plan_fg_wo" required>
+                            placeholder="Masukkan PLAN FG" name="plan_fg_wo">
                     </div>
                 </div>
             </div>
@@ -360,7 +360,7 @@
                     <label class="control-label col-sm-4">AKTUAL FG WO</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukkan AKTUAL FG WO" name="aktual_fg_wo" required>
+                            placeholder="Masukkan AKTUAL FG WO" name="aktual_fg_wo">
                     </div>
                 </div>
             </div>
@@ -369,7 +369,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">PROGRES %</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Progress %" name="progress" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Progress %" name="progress">
                     </div>
                 </div>
             </div>
@@ -379,7 +379,7 @@
                     <label class="control-label col-sm-4">DESKRIPSI PROGRESS</label>
                     <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Masukkan Deskripsi Progress"
-                            name="desc_progress" required>
+                            name="desc_progress">
                     </div>
                 </div>
             </div>
@@ -388,7 +388,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">STATUS</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Status" name="status" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Status" name="status">
                     </div>
                 </div>
             </div>
@@ -398,7 +398,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">NO DELIVERY</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan No Delivery" name="delivery_no" required>
+                        <input type="text" class="form-control" placeholder="Masukkan No Delivery" name="delivery_no">
                     </div>
                 </div>
             </div>
@@ -407,7 +407,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">TGL DELIVERY</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Tgl Delivery" name="delivery_tgl" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Tgl Delivery" name="delivery_tgl">
                     </div>
                 </div>
             </div>
@@ -416,7 +416,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">KETERANGAN</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan Keteragan" name="keterangan" required>
+                        <input type="text" class="form-control" placeholder="Masukkan Keteragan" name="keterangan">
                     </div>
                 </div>
             </div>
