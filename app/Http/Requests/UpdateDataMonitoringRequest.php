@@ -22,6 +22,7 @@ class UpdateDataMonitoringRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'dataMonitoring_id' => 'required|exists:data_monitoring,id',
             'design_pic' => 'nullable|string',
             'design_start' => 'nullable|date',
             'design_end' => 'nullable|date',

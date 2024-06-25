@@ -42,7 +42,7 @@ Route::get('/tables-user', [DataUserController::class, 'index'])->name('datauser
 Route::get('/tables-konsesi', [DataKonsesiController::class, 'index'])->name('datakonsesi.index')->middleware('auth');
 
 // Route untuk melihat Tabel Monitoring dan Chart pada Dashboard
-Route::get('/tables-monitoring', [DataMonitoringController::class, 'index'])->name('datamonitoring.index')->middleware('auth');
+Route::get('/tables-monitoring', [DataMonitoringController::class, 'index'])->name('dataMonitoring.index')->middleware('auth');
 Route::get('/chart/getData', [ChartController::class, 'getData'])->name('chart.getData')->middleware('auth');
 Route::get('/chart/getDataPieChart', [ChartController::class, 'getDataPieChart'])->name('chart.getDataPieChart')->middleware('auth');
 
@@ -75,4 +75,4 @@ Route::get('/form-program', [DataMonitoringController::class, 'edit'])->name('fo
 Route::get('/form-checker', [DataMonitoringController::class, 'edit'])->name('form.checker')->defaults('formType', 'checker');
 
 // Rute untuk mengupdate data monitoring (PUT)
-Route::put(`/dataMonitoring/{dataMonitoring}/{formType}`, [DataMonitoringController::class, 'update'])->name('dataMonitoring.update');
+Route::put(`/dataMonitoring/{dataMonitoring}/{formType}/`, [DataMonitoringController::class, 'update'])->name('dataMonitoring.update');

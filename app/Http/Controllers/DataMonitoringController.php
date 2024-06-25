@@ -152,10 +152,21 @@ class DataMonitoringController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateDataMonitoringRequest $request, DataMonitoring $dataMonitoring, $formType)
+    public function update(UpdateDataMonitoringRequest $request, DataMonitoring $dataMonitoring, $formType = null)
     {
         // Validasi data dari request
         $validated = $request->validated();
+
+        // Get formType from request if not provided in route
+        if (!$formType) {
+            $formType = $request->input('formType');
+        }
+
+        // // Update the project ID
+        // $dataMonitoring->id = $validated['id'];
+
+        // Ensure we use the correct DataMonitoring instance
+        $dataMonitoring = DataMonitoring::findOrFail($validated['dataMonitoring_id']);
 
         switch ($formType) {
             case 'design':
