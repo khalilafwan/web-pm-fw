@@ -10,13 +10,19 @@
 </p>
 
 <!-- Menampilkan alert jika ada -->
-@if(session('alert'))
-<div class="alert alert-{{ session('alert.type') }} alert-dismissible fade show" role="alert">
-    <strong>{{ session('alert.title') }}</strong> {{ session('alert.message') }}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
+@if(Session::has('alert'))
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        Swal.fire({
+            icon: '{{ Session::get('alert.type') }}',
+            title: '{{ Session::get('alert.title') }}',
+            text: '{{ Session::get('alert.message') }}',
+            confirmButtonText: 'OK'
+        }).then(function() {
+            window.location.href = '{{ route('dataMonitoring.index') }}';
+        });
+    });
+</script>
 @endif
 
 <form method="POST"
