@@ -40,12 +40,6 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4" for="id">ID Project</label>
                     <div class="col-sm-8">
-                        {{-- <select name="id" id="statdrop" class="date-end ml-5 form-control datepicker col-sm-8">
-                            @foreach($projectIds as $projectId)
-                            <option value="{{ $projectId }}" {{ $projectId==$dataMonitoring->id ? 'selected' : '' }}>{{
-                                $projectId }}</option>
-                            @endforeach
-                        </select> --}}
                         <select name="dataMonitoring_id" id="statdrop" required
                             class="date-end ml-5 form-control datepicker col-sm-8">
                             @foreach($projectIds as $projectId)
