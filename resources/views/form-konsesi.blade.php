@@ -32,7 +32,7 @@
 
             <div class="card mb-4 py-3">
                 <div class="card-body">
-                    <label class="control-label col-sm-4">NO</label>
+                    <label class="control-label col-sm-4">ID</label>
                     <div class="col-sm-8">
                         <input type="int" class="form-control" placeholder="Masukkan No" name="id" required>
                     </div>
