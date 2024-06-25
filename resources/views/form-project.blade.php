@@ -18,7 +18,7 @@
             text: '{{ Session::get('alert')['message'] }}',
             confirmButtonText: 'OK'
         }).then(function() {
-            window.location.href = '{{ route('datamonitoring.index') }}';
+            window.location.href = '{{ route('dataMonitoring.index') }}';
         });
 </script>
 @endif
