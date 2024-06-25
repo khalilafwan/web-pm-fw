@@ -94,8 +94,15 @@ class DataKonsesiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(DataKonsesi $dataKonsesi)
+    public function destroy($id)
     {
-        //
+        $dataKonsesi = DataKonsesi::findOrFail($id);
+        $dataKonsesi->delete();
+
+        return redirect()->route('datakonsesi.index')->with('alert', [
+            'type' => 'success',
+            'title' => 'Sukses',
+            'message' => 'Data Konsesi berhasil dihapus.'
+        ]);
     }
 }

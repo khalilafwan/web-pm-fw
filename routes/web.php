@@ -76,3 +76,6 @@ Route::get('/form-checker', [DataMonitoringController::class, 'edit'])->name('fo
 
 // Rute untuk mengupdate data monitoring (PUT)
 Route::put(`/dataMonitoring/{dataMonitoring}/{formType}/`, [DataMonitoringController::class, 'update'])->name('dataMonitoring.update');
+
+// Rute untuk menghapus data monitoring (DELETE)
+Route::delete('/dataMonitoring/{id}', [DataMonitoringController::class, 'destroy'])->name('dataMonitoring.destroy');

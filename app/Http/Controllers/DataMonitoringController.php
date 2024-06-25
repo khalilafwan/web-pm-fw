@@ -207,8 +207,15 @@ class DataMonitoringController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(DataMonitoring $dataMonitoring)
+    public function destroy($id)
     {
-        //
+        $dataMonitoring = DataMonitoring::findOrFail($id);
+        $dataMonitoring->delete();
+
+        return redirect()->route('dataMonitoring.index')->with('alert', [
+            'type' => 'success',
+            'title' => 'Sukses',
+            'message' => 'Data Monitoring berhasil dihapus.'
+        ]);
     }
 }
