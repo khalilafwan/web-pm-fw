@@ -46,7 +46,7 @@
                                 $projectId }}</option>
                             @endforeach
                         </select> --}}
-                        <select name="dataMonitoring_id" id="statdrop"
+                        <select name="dataMonitoring_id" id="statdrop" required
                             class="date-end ml-5 form-control datepicker col-sm-8">
                             @foreach($projectIds as $projectId)
                             <option value="{{ $projectId }}" {{ $projectId==$dataMonitoring->id ? 'selected' : '' }}>
@@ -62,7 +62,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">ID PIC</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan PIC" name="design_pic"
+                        <input type="text" class="form-control" placeholder="Masukkan PIC" name="design_pic" required
                             value="{{ old('design_pic', $dataMonitoring->design_pic) }}">
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <label class="control-label col-sm-4">START</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukan Waktu Start" name="design_start"
+                            placeholder="Masukan Waktu Start" name="design_start" required
                             value="{{ old('design_start', $dataMonitoring->design_start) }}">
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <label class="control-label col-sm-4">END</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukan Waktu End" name="design_end"
+                            placeholder="Masukan Waktu End" name="design_end" required
                             value="{{ old('design_end', $dataMonitoring->design_end) }}">
                     </div>
                 </div>

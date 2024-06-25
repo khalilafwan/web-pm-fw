@@ -43,7 +43,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4" for="id">ID Project</label>
                     <div class="col-sm-8">
-                        <select name="dataMonitoring_id" id="statdrop"
+                        <select name="dataMonitoring_id" id="statdrop" required
                             class="date-end ml-5 form-control datepicker col-sm-8">
                             @foreach($projectIds as $projectId)
                             <option value="{{ $projectId }}" {{ $projectId==$dataMonitoring->id ? 'selected' : '' }}>
@@ -59,7 +59,7 @@
                 <div class="card-body">
                     <label class="control-label col-sm-4">ID PIC</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Masukkan PIC" name="checker_pic">
+                        <input type="text" class="form-control" placeholder="Masukkan PIC" name="checker_pic" required>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     <label class="control-label col-sm-4">START</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukan Waktu Start" name="checker_start">
+                            placeholder="Masukan Waktu Start" name="checker_start" required>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     <label class="control-label col-sm-4">END</label>
                     <div class="col-sm-8">
                         <input type="date" class="date-end ml-5 form-control datepicker col-sm-8"
-                            placeholder="Masukan Waktu End" name="checker_end">
+                            placeholder="Masukan Waktu End" name="checker_end" required>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
         <button type="submit" name="submit" class="btn btn-primary waves-effect waves-light"
             id="btn-submit">Simpan</button>
     </div>
-    <input type="hidden" name="action" id="action" value="event_dialog_add_newpartnerdata" />
+    <input type="hidden" name="action" id="action" value="event_dialog_add_newpartnerdata" required>
 </form>
 
 @endsection
