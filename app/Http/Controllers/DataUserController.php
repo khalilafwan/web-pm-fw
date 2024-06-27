@@ -61,16 +61,14 @@ class DataUserController extends Controller
     public function showAccountDetails(DataUser $dataUser)
     {
         // Example: Fetch user details from database
-        $user = auth()->user(); // Retrieve authenticated user
+        $user = auth()->user();
 
         $title = "Detail User";
         
-        // Assuming $data is an array to be passed to the view
         $data = [
             'username' => $user->username,
-            'nama' => $user->nama, // Adjust according to your actual column names
+            'nama' => $user->nama,
             'role' => $user->role,
-            // Add other details as needed
         ];
 
         return view('detail-user', compact('data', 'title'));

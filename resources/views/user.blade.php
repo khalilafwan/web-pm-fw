@@ -9,7 +9,7 @@
     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
-    <!-- DataTables Example -->
+    <!-- DataTables -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Data User</h6>
@@ -24,7 +24,6 @@
                             <th>Password</th>
                             <th>Nama</th>
                             <th>Role</th>
-                            <th>Aksi</th>
                         </tr>
                         </tr>
                     </thead>
@@ -36,14 +35,6 @@
                                 <td>{{ $row->password }}</td>
                                 <td>{{ $row->nama }}</td>
                                 <td>{{ $row->role }}</td>
-                                
-                                {{-- @if (auth()->user()->role == 'admin') --}}
-                                    <td>
-                                        <button type="button" class="btn btn-danger btn-circle btn-delete" data-toggle="modal" data-target="#deleteModal" data-id="{{ $row->id }}">
-                                            <i class="fas fa-trash"></i>
-                                        </button>
-                                    </td>
-                                {{-- @endif --}}
                             </tr>
                         @endforeach
                     </tbody>

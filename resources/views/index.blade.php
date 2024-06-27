@@ -16,7 +16,7 @@
 
 <!-- Content Row -->
 <div class="row">
-    <!-- Earnings (Monthly) Card Example -->
+    <!-- Total Harga Project Card -->
     <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <!-- Pending Requests Card Example -->
+    <!-- Project On Going Card -->
     <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-warning shadow h-100 py-2">
             <div class="card-body">
@@ -60,7 +60,7 @@
     <!-- Area Chart -->
     <div class="col-xl-8 col-lg-7">
         <div class="card shadow mb-4">
-            <!-- Card Header - Dropdown -->
+            <!-- Card Header -->
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">Tinjauan Project</h6>
             </div>
@@ -76,7 +76,7 @@
     <!-- Pie Chart -->
     <div class="col-xl-4 col-lg-5">
         <div class="card shadow mb-4">
-            <!-- Card Header - Dropdown -->
+            <!-- Card Header -->
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">Tipe Panel</h6>
             </div>
