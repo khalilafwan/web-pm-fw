@@ -148,4 +148,6 @@
         </div>
     </div>
 </div>
+
+<script src="{{ asset('js/delete.js') }}"></script>
 @endsection
