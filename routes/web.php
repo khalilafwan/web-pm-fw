@@ -36,8 +36,13 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'register']);
 
-// Route untuk melihat Tabel Konsesi
+// Route untuk melihat Tabel User
 Route::get('/tables-user', [DataUserController::class, 'index'])->name('datauser.index')->middleware('auth');
+
+// Route untuk melihat Detail User
+Route::get('/detail-user', [DataUserController::class, 'showAccountDetails'])
+    ->name('account.details')
+    ->middleware('auth');
 
 // Route untuk melihat Tabel Konsesi
 Route::get('/tables-konsesi', [DataKonsesiController::class, 'index'])->name('datakonsesi.index')->middleware('auth');
