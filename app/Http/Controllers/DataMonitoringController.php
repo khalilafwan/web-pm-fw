@@ -209,13 +209,22 @@ class DataMonitoringController extends Controller
      */
     public function destroy($id)
     {
-        $dataMonitoring = DataMonitoring::findOrFail($id);
-        $dataMonitoring->delete();
+        try {
+            $dataMonitoring = DataMonitoring::findOrFail($id);
+            $dataMonitoring->delete();
 
-        return redirect()->route('dataMonitoring.index')->with('alert', [
-            'type' => 'success',
-            'title' => 'Sukses',
-            'message' => 'Data Monitoring berhasil dihapus.'
-        ]);
+            return redirect()->route('dataMonitoring.index')->with('alert', [
+                'type' => 'success',
+                'title' => 'Sukses',
+                'message' => 'Data Monitoring berhasil dihapus.'
+            ]);
+        } catch (\Exception $e) {
+            // Handle exception if record not found or other issues
+            return redirect()->route('dataMonitoring.index')->with('alert', [
+                'type' => 'error',
+                'title' => 'Error',
+                'message' => 'Gagal menghapus data Monitoring: ' . $e->getMessage()
+            ]);
+        }
     }
 }
