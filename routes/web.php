@@ -48,12 +48,12 @@ Route::get('/chart/getData', [ChartController::class, 'getData'])->name('chart.g
 Route::get('/chart/getDataPieChart', [ChartController::class, 'getDataPieChart'])->name('chart.getDataPieChart')->middleware('auth');
 
 // Route untuk input Data Konsesi
-Route::get('/form-konsesi', [DataKonsesiController::class, 'create'])->name('datakonsesi.create');
-Route::post('/form-konsesi', [DataKonsesiController::class, 'store'])->name('datakonsesi.store');
+Route::get('/form-konsesi', [DataKonsesiController::class, 'create'])->name('datakonsesi.create')->middleware('auth');
+Route::post('/form-konsesi', [DataKonsesiController::class, 'store'])->name('datakonsesi.store')->middleware('auth');
 
 // Route untuk input Data Project
-Route::get('/form-project', [DataMonitoringController::class, 'create'])->name('datamonitoring.create');
-Route::post('/form-project', [DataMonitoringController::class, 'store'])->name('datamonitoring.store');
+Route::get('/form-project', [DataMonitoringController::class, 'create'])->name('datamonitoring.create')->middleware('auth');
+Route::post('/form-project', [DataMonitoringController::class, 'store'])->name('datamonitoring.store')->middleware('auth');
 
 // Route untuk import Data Project
 
@@ -65,19 +65,19 @@ Route::get('/import-project', function () {
 Route::post('/import-project', [FastExcelController::class, 'import'])->middleware('auth');
 
 // Rute untuk form design
-Route::get('/form-design', [DataMonitoringController::class, 'edit'])->name('dataMonitoring.edit')->defaults('formType', 'design');
+Route::get('/form-design', [DataMonitoringController::class, 'edit'])->name('dataMonitoring.edit')->defaults('formType', 'design')->middleware('auth');
 
 // Rute untuk form nesting
-Route::get('/form-nesting', [DataMonitoringController::class, 'edit'])->name('form.nesting')->defaults('formType', 'nesting');
+Route::get('/form-nesting', [DataMonitoringController::class, 'edit'])->name('form.nesting')->defaults('formType', 'nesting')->middleware('auth');
 
 // Rute untuk form program
-Route::get('/form-program', [DataMonitoringController::class, 'edit'])->name('form.program')->defaults('formType', 'program');
+Route::get('/form-program', [DataMonitoringController::class, 'edit'])->name('form.program')->defaults('formType', 'program')->middleware('auth');
 
 // Rute untuk form checker
-Route::get('/form-checker', [DataMonitoringController::class, 'edit'])->name('form.checker')->defaults('formType', 'checker');
+Route::get('/form-checker', [DataMonitoringController::class, 'edit'])->name('form.checker')->defaults('formType', 'checker')->middleware('auth');
 
 // Rute untuk mengupdate data monitoring (PUT)
-Route::put(`/dataMonitoring/{dataMonitoring}/{formType}/`, [DataMonitoringController::class, 'update'])->name('dataMonitoring.update');
+Route::put(`/dataMonitoring/{dataMonitoring}/{formType}/`, [DataMonitoringController::class, 'update'])->name('dataMonitoring.update')->middleware('auth');
 
 // Rute untuk menghapus data monitoring (DELETE)
-Route::delete('/dataMonitoring/{id}', [DataMonitoringController::class, 'destroy'])->name('dataMonitoring.destroy');
+Route::delete('/dataMonitoring/{id}', [DataMonitoringController::class, 'destroy'])->name('dataMonitoring.destroy')->middleware('auth');
