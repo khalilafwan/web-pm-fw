@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartController;
+use App\Http\Controllers\DataUserController;
+use App\Http\Controllers\FastExcelController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DataKonsesiController;
-use App\Http\Controllers\DataUserController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DataMonitoringController;
 
@@ -61,6 +62,7 @@ Route::get('/import-project', function () {
         "title" => "Import Project"
     ]);
 })->middleware('auth');
+Route::post('/import-project', [FastExcelController::class, 'import'])->middleware('auth');
 
 // Rute untuk form design
 Route::get('/form-design', [DataMonitoringController::class, 'edit'])->name('dataMonitoring.edit')->defaults('formType', 'design');

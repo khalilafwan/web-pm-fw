@@ -7,7 +7,24 @@
 
 @section('content')
 
-<form method="POST" action="import-aksi.php" enctype="multipart/form-data">
+<!-- Menampilkan alert jika ada -->
+@if(Session::has('alert'))
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        Swal.fire({
+            icon: '{{ Session::get('alert.type') }}',
+            title: '{{ Session::get('alert.title') }}',
+            text: '{{ Session::get('alert.message') }}',
+            confirmButtonText: 'OK'
+        }).then(function() {
+            window.location.href = '{{ route('dataMonitoring.index') }}';
+        });
+    });
+</script>
+@endif
+
+<form method="POST" aaction="{{ url('/import-project') }}" enctype="multipart/form-data">
+    @csrf
     <div class="container">
         <hr>
 
